@@ -72,6 +72,92 @@
       </p>
     </section>
 
+    <section class="research-section">
+
+      <h2>Independent Research: Multimodal Mpox Screening</h2>
+    
+      <p class="subtitle">
+        A Multimodal AI-Based Approach for Mpox Screening Using Clinical Features and Skin Images
+      </p>
+    
+      <p>
+        During the 2022 Mpox outbreak, early diagnosis was challenging due to symptom overlap
+        with other dermatological conditions. While most existing AI-based approaches focused
+        solely on skin images, clinical symptoms play a crucial role in differential diagnosis.
+        This project explores a multimodal screening framework combining skin images and
+        structured clinical features.
+      </p>
+    
+      <h3>Dataset & Preprocessing</h3>
+      <ul>
+        <li>Uvira Mpox dataset with patient-level clinical metadata</li>
+        <li>Extensive data cleaning to construct image–metadata matched subsets</li>
+        <li>Manual lesion annotation and cropping to reduce background noise</li>
+        <li>Subject-level separation to prevent data leakage</li>
+      </ul>
+    
+      <h3>Proposed Multimodal Framework</h3>
+      <p>
+        The system consists of two parallel branches: an image branch using a CNN
+        backbone (e.g., EfficientNet / ResNet) and a feature branch using an MLP
+        trained on selected clinical variables. Feature embeddings from both branches
+        are concatenated using an early-fusion strategy and passed to a classifier head.
+      </p>
+    
+      <figure>
+        <img src="images/mpox_pipeline.png" alt="Multimodal Mpox classification pipeline">
+        <figcaption>
+          Multimodal architecture combining cropped skin images and selected clinical features.
+        </figcaption>
+      </figure>
+    
+      <h3>Feature Selection & Experimental Design</h3>
+      <ul>
+        <li>Feature selection based on correlation analysis and demographic balance</li>
+        <li>10-fold cross-validation with stratification</li>
+        <li>Strict prevention of data leakage (scalers and encoders fitted only on training folds)</li>
+        <li>Evaluation using Accuracy, AUC, F1-score, Sensitivity, and Specificity</li>
+      </ul>
+    
+      <h3>Results & Observations</h3>
+      <p>
+        Cropping lesion regions improved performance across all experimental settings.
+        The multimodal model combining cropped images and selected clinical features
+        achieved the best numerical performance (Accuracy ≈ 0.78, AUC ≈ 0.79).
+        However, statistical tests (Friedman and pairwise comparisons) showed that
+        improvements were not statistically significant, highlighting dataset size
+        limitations.
+      </p>
+    
+      <h3>Extended Analysis</h3>
+      <ul>
+        <li>Automated lesion detection using YOLOv8 (ongoing)</li>
+        <li>CT value (viral load) prediction using multi-task learning</li>
+        <li>SHAP-based feature importance analysis for clinical interpretability</li>
+        <li>Grad-CAM visualization for CNN explainability</li>
+      </ul>
+    
+      <h3>Key Takeaways</h3>
+      <p>
+        This project demonstrates that multimodal learning provides more balanced
+        sensitivity and specificity compared to unimodal models. While performance
+        gains are modest, the framework shows promise for real-world screening systems
+        where both visual and clinical data are available.
+      </p>
+    
+      <h3>Presentation</h3>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/zgU4ModCH_Y"
+        title="Mpox Multimodal Project Presentation"
+        frameborder="0"
+        allowfullscreen>
+      </iframe>
+    
+    </section>
+
+
   </main>
 
 </body>
