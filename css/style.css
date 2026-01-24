@@ -21,3 +21,14 @@ nav a:hover {
   text-decoration: underline;
 }
 
+section {
+  margin-top: 40px;
+}
+
+h1 {
+  font-size: 2.2em;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
