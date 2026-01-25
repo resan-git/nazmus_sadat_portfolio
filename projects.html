@@ -474,3 +474,95 @@
 
   
 <h2 class="category">Modeling & Control Systems</h2>
+  <section class="project">
+
+    <h2>
+      Parallel Cascade Modeling of Ankle Joint Stiffness
+    </h2>
+  
+    <p class="subtitle">
+      Biomechanical System Identification & Control | Control Systems Course (Level 3 Term 2)
+    </p>
+  
+    <p>
+      <strong>Problem:</strong>
+      Ankle joint stiffness represents the dynamic relationship between joint
+      angular displacement and the resulting torque. Accurate identification of
+      this relationship is essential for understanding human motor control and
+      designing rehabilitation devices that interact safely with the human body.
+    </p>
+  
+    <p>
+      <strong>Objective:</strong>
+      To develop a Parallel Cascade Model capable of separating and identifying
+      the two fundamental contributors to ankle joint stiffness: intrinsic
+      mechanical stiffness and reflex-mediated neural stiffness.
+    </p>
+  
+    <p>
+      <strong>Model Architecture:</strong>
+      The total ankle torque was modeled as the sum of two parallel pathways:
+    </p>
+  
+    <ul>
+      <li>
+        <strong>Intrinsic Stiffness Path:</strong>
+        Representing passive joint mechanics, modeled as a second-order linear
+        system defined by inertia (I), viscosity (B), and elasticity (K).
+      </li>
+      <li>
+        <strong>Reflex Stiffness Path:</strong>
+        Representing neuromuscular feedback, modeled using a
+        Linear–Nonlinear–Linear (LNL) structure incorporating physiological delay,
+        half-wave rectification, and a second-order linear dynamic system.
+      </li>
+    </ul>
+  
+    <p>
+      <strong>Simulation & Methodology:</strong>
+      A comprehensive block-diagram model was implemented in MATLAB/Simulink.
+      Realistic physiological parameters were selected based on literature, and
+      the system was excited using both simulated and experimentally derived
+      joint position inputs.
+    </p>
+  
+    <p>
+      <strong>Key Results:</strong>
+    </p>
+    <ul>
+      <li>Successful decomposition of total torque into intrinsic and reflex components</li>
+      <li>High correlation between simulated torque and reference experimental data</li>
+      <li>Clear open-loop insights into the independent effects of intrinsic parameters and reflex gain</li>
+    </ul>
+  
+    <p>
+      <strong>Outcome:</strong>
+      The parallel cascade model accurately captured the time-varying behavior of
+      ankle joint mechanics, demonstrating its effectiveness in representing both
+      mechanical and neural contributions to joint stiffness.
+    </p>
+  
+    <p>
+      <strong>Tools & Technologies:</strong>
+      MATLAB, Simulink, system identification, control theory, biomechanical
+      modeling.
+    </p>
+  
+    <figure>
+      <img src="images/ankle_stiffness_model.png" alt="Parallel cascade ankle joint stiffness model">
+      <figcaption>
+        Simulink implementation of the parallel cascade model illustrating
+        intrinsic and reflex stiffness pathways contributing to total ankle torque.
+      </figcaption>
+    </figure>
+  
+    <p>
+      <strong>Significance:</strong>
+      This modeling framework is directly applicable to rehabilitation robotics,
+      active prosthetics, and wearable exoskeletons, where safe and adaptive
+      human–machine interaction requires accurate representation of joint
+      dynamics.
+    </p>
+  
+  </section>
+
