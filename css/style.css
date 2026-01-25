@@ -86,3 +86,23 @@ iframe {
   display: block;
   margin: 20px auto;
 }
+
+.project {
+  margin-top: 50px;
+}
+
+.category {
+  margin-top: 70px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.project .subtitle {
+  font-style: italic;
+  color: #555;
+}
+
+.project figure {
+  margin-top: 20px;
+}
+
