@@ -565,4 +565,94 @@
     </p>
   
   </section>
+  <section class="project">
+
+    <h2>
+      Tumor Growth Dynamics Modeling Using Fractional Calculus
+    </h2>
+  
+    <p class="subtitle">
+      Mathematical Modeling & Medical Image Analysis | Imaging Course (Level 4 Term 1)
+    </p>
+  
+    <p>
+      <strong>Problem:</strong>
+      In oncology, incomplete tumor resection and microscopic residual cells often
+      lead to tumor recurrence and poor patient prognosis. Predicting tumor
+      regrowth dynamics remains a critical challenge in treatment planning.
+    </p>
+  
+    <p>
+      <strong>Objective:</strong>
+      To develop a mathematically grounded prediction framework for tumor growth
+      dynamics using fractional calculus, enabling more interpretable and reliable
+      modeling compared to black-box machine learning approaches.
+    </p>
+  
+    <p>
+      <strong>Methodology:</strong>
+      The project implemented an image-driven modeling pipeline to simulate tumor
+      progression on two-dimensional raster masks:
+    </p>
+  
+    <ul>
+      <li>Preprocessing of medical images to isolate anatomical regions</li>
+      <li>Segmentation of skull, brain region, and tumor mask</li>
+      <li>Estimation of initial tumor area and cell clearance parameters</li>
+      <li>Derivation of time-dependent growth rate <em>w(t)</em></li>
+      <li>Iterative mask interpolation and dilation to simulate spatial growth</li>
+      <li>Visualization of proliferating and non-dividing tumor regions</li>
+    </ul>
+  
+    <p>
+      <strong>Modeling Framework:</strong>
+      Fractional-order differential equations were employed to capture the
+      memory-dependent and non-local growth behavior of tumor cells, providing a
+      more realistic representation than conventional integer-order models.
+    </p>
+  
+    <p>
+      <strong>Quantitative Results:</strong>
+    </p>
+  
+    <ul>
+      <li>Average accuracy: 99.8%</li>
+      <li>Dice coefficient: 0.934</li>
+      <li>Specificity: 0.999</li>
+      <li>Average processing time: 0.873 seconds</li>
+    </ul>
+  
+    <p>
+      <strong>Outcome:</strong>
+      The model successfully simulated malignant tumor growth over a 100-day
+      period, tracking proliferating area <em>u(t)</em>, non-dividing cell area
+      <em>v(t)</em>, and growth rate <em>w(t)</em>, demonstrating both high accuracy
+      and computational efficiency.
+    </p>
+  
+    <p>
+      <strong>Tools & Technologies:</strong>
+      MATLAB, image processing, fractional calculus, numerical simulation,
+      mathematical modeling.
+    </p>
+  
+    <figure>
+      <img src="images/tumor_growth_model.png" alt="Tumor growth modeling using fractional calculus">
+      <figcaption>
+        Simulation results illustrating tumor growth dynamics, including spatial
+        expansion and temporal evolution of proliferating and non-dividing cell
+        populations.
+      </figcaption>
+    </figure>
+  
+    <p>
+      <strong>Clinical Relevance & Future Scope:</strong>
+      This modeling approach provides interpretable insights for surgical planning
+      and recurrence prediction. Future work includes extending the framework to
+      three-dimensional vector-based modeling using raster-to-vector (R2V)
+      techniques for enhanced clinical applicability.
+    </p>
+  
+  </section>
+
 
