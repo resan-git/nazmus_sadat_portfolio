@@ -106,3 +106,27 @@ iframe {
   margin-top: 20px;
 }
 
+
+.contact-info {
+  margin-top: 40px;
+}
+
+.contact-info p {
+  margin-bottom: 25px;
+}
+
+.contact-info a {
+  color: #004aad;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.note {
+  margin-top: 50px;
+  font-size: 0.95em;
+  color: #555;
+}
+
