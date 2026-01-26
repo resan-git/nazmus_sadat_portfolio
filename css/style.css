@@ -150,4 +150,9 @@ main section {
   margin-top: 45px;
 }
 
+.small-video video {
+  max-width: 360px;
+}
+
+
 
