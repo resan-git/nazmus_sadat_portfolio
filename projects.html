@@ -371,8 +371,9 @@
     </h2>
   
     <p class="subtitle">
-      Deep Learning & Medical Image Analysis | Undergraduate Project
+      Deep Learning & Medical Image Analysis | CNN-based Classifier with Web Interface
     </p>
+
   
     <p>
       <strong>Problem:</strong>
@@ -384,9 +385,10 @@
     <p>
       <strong>Approach:</strong>
       We developed a convolutional neural network (CNN)-based binary classification
-      system to detect pneumonia from chest X-ray images. The pipeline includes
-      image preprocessing, supervised model training, and performance evaluation
-      using standard classification metrics.
+      system to detect pneumonia from chest X-ray images. In addition to model
+      training and evaluation, a lightweight web application was implemented to
+      enable users to upload X-ray images and obtain real-time prediction results,
+      demonstrating end-to-end deployment of the model.
     </p>
   
     <p>
@@ -396,6 +398,7 @@
       <li>Preprocessing and normalization of chest X-ray images</li>
       <li>CNN-based binary classification (Normal vs Pneumonia)</li>
       <li>Model evaluation using accuracy, precision, recall, and F1-score</li>
+      <li>Development of a web-based inference interface for model demonstration</li>
     </ul>
   
     <p>
@@ -406,10 +409,22 @@
   
     <p>
       <strong>Outcome:</strong>
-      The trained model demonstrated the feasibility of automated pneumonia
-      detection from X-ray images and produced reasonable classification results
-      on sample test images.
+      The trained model achieved an overall accuracy of approximately 0.96 on the
+      training set and demonstrated reasonable performance on held-out validation
+      samples. The project successfully illustrates the feasibility of automated
+      pneumonia detection from chest X-ray images and the integration of a trained
+      deep learning model into a functional web application for demonstration
+      purposes.
     </p>
+
+    <p>
+  <strong>Evaluation Notes:</strong>
+      Due to dataset size constraints and class imbalance, model evaluation focused
+      primarily on accuracy-based assessment during initial experimentation.
+      Comprehensive clinical metrics such as ROC-AUC and external test validation
+      were not performed and remain outside the scope of this undergraduate project.
+    </p>
+
   
     <p>
       <strong>Limitations:</strong>
@@ -434,8 +449,9 @@
     <p>
       <strong>Future Scope:</strong>
       Incorporating transfer learning models (e.g., ResNet, EfficientNet), applying
-      data augmentation for improved robustness, and extending the system to
-      multi-class lung disease classification.
+      advanced data augmentation techniques, performing robust evaluation using
+      ROC-AUC and confusion-matrix-based analysis, and extending the system to
+      multi-class lung disease classification with clinically validated datasets.
     </p>
   
     <p>
@@ -445,7 +461,7 @@
     </p>
   
     <p>
-      <a href="https://github.com/your-username/pneumonia-detection"
+      <a href="https://github.com/resan-git/pneumonia-detection-chest-xray"
          target="_blank">
         View Project on GitHub →
       </a>
